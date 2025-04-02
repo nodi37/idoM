@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icons/logo-dark.svg" />
+    <link rel="stylesheet" type="text/css" href="/styles/main.css" />
+
+    <!-- Components -->
+    <link rel="stylesheet" type="text/css" href="/styles/badge.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/custom-select.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/hero.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/styles/featured-products.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/styles/product-listing.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/small-cta.css" />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Others -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forma’sint.</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header-fixed-wrapper">
+      <header class="header container">
+        <a href="#" class="logo">
+          <div class="logo-image-wrapper">
+            <img role="presentation" alt="logo" src="/icons/logo-dark.svg" />
+            <img role="presentation" alt="logo" src="/icons/logo-light.svg" />
+          </div>
+          <span class="logo-text">Forma’sint.</span>
+          <span class="logo-annotation">idomods &lt;/&gt;</span>
+        </a>
+
+        <div id="nav-overlay" class="overlay">&nbsp;</div>
+
+        <div id="header-nav" class="header-nav">
+          <div class="mobile-menu-controls">
+            <img role="presentation" alt="logo" src="/icons/logo-light.svg" />
+            <button id="close-menu-btn" class="burger-wrapper">
+              <img role="presentation" src="/icons/close.svg" /> close
+            </button>
+          </div>
+
+          <nav>
+            <ul class="navigation">
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#featured">Featured products</a>
+              </li>
+              <li>
+                <a href="#listing">Product listing</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="user-bar">
+          <img role="presentation" alt="account" src="/icons/user.svg" />
+          <span>FRONTEND DEVELOPER</span>
+        </div>
+        <button id="open-menu-btn" class="burger-wrapper">
+          <img role="presentation" src="/icons/burger.svg" /> Menu
+        </button>
+      </header>
+    </div>
+    <!-- Hero section -->
+    <section id="home" class="container hero">
+      <h1 aria-label="Forma’sint – Najlepsza marka wspinaczkowa">
+        <img alt="Forma’sint" class="logo" src="/assets/hero/logo.png" />
+      </h1>
+      <div class="image-wrapper">
+        <img
+          class="desktop"
+          alt="Woman climbing on ice"
+          src="/assets/hero/image.png"
+        />
+        <img
+          alt="Woman climbing on ice"
+          class="mobile"
+          src="/assets/hero/image_mobile.png"
+        />
+      </div>
+    </section>
+
+    <!-- Products section -->
+    <section id="featured" class="featured-products container">
+      <span class="eyebrow">FEATURED PRODUCTS</span>
+      <h2 class="title">Browse Featured</h2>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <!-- Card -->
+            <div class="card">
+              <div class="card-image-wrapper">
+                <div class="badge primary">Bestseller</div>
+                <button class="card-button" aria-label="Add to favorites">
+                  <img role="presentation" src="./icons/fav-dark.svg" />
+                  <img role="presentation" src="./icons/fav-light.svg" />
+                </button>
+                <img
+                  class="product-image"
+                  width="380"
+                  height="380"
+                  alt="Product description"
+                  src="/assets/products/image (18).png"
+                />
+              </div>
+              <div class="card-info-wrapper">
+                <p class="product-name">Orange helmet for alpine TOUNDRA</p>
+                <p class="product-price">€300,00 EUR</p>
+              </div>
+            </div>
+            <!-- Card end -->
+          </div>
+
+          <div class="swiper-slide">
+            <!-- Card -->
+            <div class="card">
+              <div class="card-image-wrapper">
+                <div class="badge secondary">Limited edition</div>
+                <button class="card-button" aria-label="Add to favorites">
+                  <img role="presentation" src="./icons/fav-dark.svg" />
+                  <img role="presentation" src="./icons/fav-light.svg" />
+                </button>
+                <img
+                  class="product-image"
+                  width="380"
+                  height="380"
+                  alt="Product description"
+                  src="/assets/products/image (17).png"
+                />
+              </div>
+              <div class="card-info-wrapper">
+                <p class="product-name">Orange helmet for alpine TOUNDRA</p>
+                <p class="product-price">€300,00 EUR</p>
+              </div>
+            </div>
+            <!-- Card end -->
+          </div>
+
+          <div class="swiper-slide">
+            <!-- Card -->
+            <div class="card">
+              <div class="card-image-wrapper">
+                <!-- <div class="badge secondary">Limited edition</div> -->
+                <button class="card-button" aria-label="Add to favorites">
+                  <img role="presentation" src="./icons/fav-dark.svg" />
+                  <img role="presentation" src="./icons/fav-light.svg" />
+                </button>
+                <img
+                  class="product-image"
+                  width="380"
+                  height="380"
+                  alt="Product description"
+                  src="/assets/products/image (16).png"
+                />
+              </div>
+              <div class="card-info-wrapper">
+                <p class="product-name">Orange helmet for alpine TOUNDRA</p>
+                <p class="product-price">€300,00 EUR</p>
+              </div>
+            </div>
+            <!-- Card end -->
+          </div>
+
+          <div class="swiper-slide">
+            <!-- Card -->
+            <div class="card">
+              <div class="card-image-wrapper">
+                <!-- <div class="badge secondary">Limited edition</div> -->
+                <button class="card-button" aria-label="Add to favorites">
+                  <img role="presentation" src="./icons/fav-dark.svg" />
+                  <img role="presentation" src="./icons/fav-light.svg" />
+                </button>
+                <img
+                  class="product-image"
+                  width="380"
+                  height="380"
+                  alt="Product description"
+                  src="/assets/products/image (15).png"
+                />
+              </div>
+              <div class="card-info-wrapper">
+                <p class="product-name">Orange helmet for alpine TOUNDRA</p>
+                <p class="product-price">€300,00 EUR</p>
+              </div>
+            </div>
+            <!-- Card end -->
+          </div>
+
+          <div class="swiper-slide">
+            <!-- Card -->
+            <div class="card">
+              <div class="card-image-wrapper">
+                <!-- <div class="badge secondary">Limited edition</div> -->
+                <button class="card-button" aria-label="Add to favorites">
+                  <img role="presentation" src="./icons/fav-dark.svg" />
+                  <img role="presentation" src="./icons/fav-light.svg" />
+                </button>
+                <img
+                  class="product-image"
+                  width="380"
+                  height="380"
+                  alt="Product description"
+                  src="/assets/products/image (17).png"
+                />
+              </div>
+              <div class="card-info-wrapper">
+                <p class="product-name">Orange helmet for alpine TOUNDRA</p>
+                <p class="product-price">€300,00 EUR</p>
+              </div>
+            </div>
+            <!-- Card end -->
+          </div>
+        </div>
+
+        <!-- <div class="swiper-button-prev"></div> -->
+        <div class="swiper-next-page-btn">
+          <img aria-label="Next page" src="/icons/arrow-right.svg" />
+        </div>
+
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+
+    <!-- Product listing -->
+    <section id="listing" class="product-listing container">
+      <div class="product-count-wrapper">
+        <span>Number of products per page:</span>
+        <div class="custom-select">
+          <button id="custom-select-trigger" class="trigger">
+            14
+            <img role="presentation" src="/icons/chev-down.svg" />
+          </button>
+
+          <ul id="custom-select-data-list" class="data-list">
+            <li>
+              <button class="trigger">
+                14
+                <img
+                  style="transform: rotate(180deg)"
+                  role="presentation"
+                  src="/icons/chev-down.svg"
+                />
+              </button>
+            </li>
+            <li><button class="option">24</button></li>
+            <li><button class="option">36</button></li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid">
+        <div data-card-id="1" class="card">
+          <img
+            alt="Product description"
+            src="/assets/products/image (1).png"
+            width="380"
+            height="380"
+          />
+        </div>
+        <div data-card-id="2" class="card">
+          <img
+            alt="Product description"
+            src="/assets/products/image (2).png"
+            width="380"
+            height="380"
+          />
+        </div>
+        <div data-card-id="3" class="card">
+          <img
+            alt="Product description"
+            src="/assets/products/image (3).png"
+            width="380"
+            height="380"
+          />
+        </div>
+        <div data-card-id="4" class="card">
+          <img
+            alt="Product description"
+            src="/assets/products/image (4).png"
+            width="380"
+            height="380"
+          />
+        </div>
+        <div data-card-id="5" class="card">
+          <img
+            alt="Product description"
+            src="/assets/products/image (5).png"
+            width="380"
+            height="380"
+          />
+        </div>
+        <div data-card-id="6" class="card">
+          <img
+            alt="Product description"
+            src="/assets/products/image (6).png"
+            width="380"
+            height="380"
+          />
+        </div>
+        <div data-card-id="7" class="card">
+          <img
+            alt="Product description"
+            src="/assets/products/image (7).png"
+            width="380"
+            height="380"
+          />
+        </div>
+        <div data-card-id="8" class="card">
+          <img
+            alt="Product description"
+            src="/assets/products/image (8).png"
+            width="380"
+            height="380"
+          />
+        </div>
+        <div data-card-id="9" class="card">
+          <img
+            alt="Product description"
+            src="/assets/products/image (9).png"
+            width="380"
+            height="380"
+          />
+        </div>
+        <div data-card-id="10" class="card">
+          <img
+            alt="Product description"
+            src="/assets/products/image (10).png"
+            width="380"
+            height="380"
+          />
+        </div>
+        <div data-card-id="11" class="card">
+          <img
+            alt="Product description"
+            src="/assets/products/image (11).png"
+            width="380"
+            height="380"
+          />
+        </div>
+        <div data-card-id="12" class="card">
+          <img
+            alt="Product description"
+            src="/assets/products/image (12).png"
+            width="380"
+            height="380"
+          />
+        </div>
+        <div data-card-id="13" class="card">
+          <img
+            alt="Product description"
+            src="/assets/products/image (13).png"
+            width="380"
+            height="380"
+          />
+        </div>
+        <div data-card-id="14" class="card">
+          <img
+            alt="Product description"
+            src="/assets/products/image (14).png"
+            width="380"
+            height="380"
+          />
+        </div>
+        <div class="small-cta cta">
+          <img class="background" src="/assets/cta.jpg" role="presentation" />
+          <div class="content">
+            <span class="eyebrow">Forma’sint.</span>
+            <p class="title">You'll look and feel like the champion.</p>
+            <button>
+              Check this out
+              <img role="presentation" src="/icons/chev-right.svg" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/scripts/swiper-initializer.js"></script>
+
+    <!-- Interactive things initializer -->
+    <script src="/scripts/interactive-controls.js"></script>
+  </body>
+</html>
