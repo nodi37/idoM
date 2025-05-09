@@ -13,6 +13,7 @@ class ProductListingSection extends HTMLElement {
     super();
     this.cleanupFunction = () => {};
     this.productsCount = 10;
+    this.cardClickHandlers = new Map();
   }
 
   showCardPopup(cardData) {
@@ -23,21 +24,34 @@ class ProductListingSection extends HTMLElement {
 
   async updateCards() {
     const cardsData = fetchProducts(this.productsCount); // await with other props
+
+    // Create new cards
     const cardElements = cardsData.map((cardData) => {
       const templateElement = document.createElement("template");
       const markup = createCardTemplate(cardData);
       templateElement.innerHTML = markup;
       const targetElement = templateElement.content.firstElementChild;
-      targetElement.addEventListener(
-        "click",
-        (() => this.showCardPopup(cardData)).bind(this)
-      );
+
+      const clickHandler = (() => this.showCardPopup(cardData)).bind(this);
+      targetElement.addEventListener("click", clickHandler);
+
+      this.cardClickHandlers.set(targetElement, clickHandler);
+
       return targetElement;
     });
+
     const gridElement = this.querySelector("#products-grid");
-    gridElement
-      .querySelectorAll("[data-card-id]")
-      .forEach((node) => node.remove());
+
+    // Remove old
+    gridElement.querySelectorAll("[data-card-id]").forEach((node) => {
+      const handler = this.cardClickHandlers.get(node);
+      if (handler) {
+        node.removeEventListener("click", handler);
+        this.cardClickHandlers.delete(node);
+      }
+      node.remove();
+    });
+
     cardElements.forEach((el) => {
       gridElement.appendChild(el);
     });
