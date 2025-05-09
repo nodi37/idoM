@@ -1,0 +1,10 @@
+.user-bar {
+  display: none;
+
+  align-items: center;
+  gap: 12px;
+
+  @media (min-width: 1024px) {
+    display: flex;
+  }
+}

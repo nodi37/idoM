@@ -1,0 +1,55 @@
+.custom-select {
+  position: relative;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -1%;
+  text-transform: uppercase;
+}
+
+.custom-select__trigger {
+  display: flex;
+  gap: 8px;
+}
+
+.custom-select__data-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--color-primary-grey);
+  background: var(--color-white);
+  width: 75px;
+  text-align: center;
+  transform: scaleY(0);
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+  transform-origin: top;
+
+  /* Should be --opened for BEM but with .opened is faster */
+  &.opened {
+    transform: scaleY(1);
+    opacity: 1;
+    z-index: 10;
+  }
+}
+
+.custom-select__option {
+  display: block;
+  width: 100%;
+  padding-block: 8px;
+  border-bottom: 1px solid var(--color-primary-grey);
+}
+
+.custom-select__option:first-child {
+  display: flex;
+  gap: 8px;
+  padding-top: 0;
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.custom-select__option:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}

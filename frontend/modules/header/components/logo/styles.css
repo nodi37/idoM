@@ -1,0 +1,45 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -1%;
+  text-transform: uppercase;
+
+  &:hover .logo__image-wrapper img:last-child {
+    transition: opacity 0.3s;
+    opacity: 0;
+  }
+
+  @media (min-width: 1024px) {
+    gap: 24px;
+  }
+}
+
+.logo__annotation {
+  display: none;
+
+  @media (min-width: 1152px) {
+    display: block;
+  }
+}
+
+.logo__text {
+  margin-right: 8px;
+}
+
+.logo__image-wrapper {
+  position: relative;
+  flex-shrink: 0;
+  height: 24px;
+  width: 24px;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+  }
+}

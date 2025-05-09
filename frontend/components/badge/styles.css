@@ -1,0 +1,13 @@
+.badge {
+  display: block;
+  border-radius: 999px;
+  padding: 4px 12px;
+}
+
+.badge--primary {
+  background: var(--badge-primary-color);
+}
+
+.badge--secondary {
+  background: var(--badge-secondary-color);
+}

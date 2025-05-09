@@ -1,0 +1,27 @@
+.header-fixed-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding-block: 32px;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.header__mobile-nav-trigger {
+  display: flex;
+  gap: 8px;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
